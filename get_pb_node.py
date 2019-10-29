@@ -2,10 +2,10 @@
 import tensorflow as tf
 import os
 
-# model_dir = './model_pb'
-# model_name = 'cls_scene.pb'
-model_dir = './model_pb/1572250528'
-model_name = 'saved_model.pb'
+model_dir = './model_pb'
+model_name = 'cls_scene.pb'
+# model_dir = './model_pb/1572250528'
+# model_name = 'saved_model.pb'
 
 
 def create_graph():
