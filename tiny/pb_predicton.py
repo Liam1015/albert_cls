@@ -101,6 +101,7 @@ class bertPredict(object):
 
 
 if __name__ == '__main__':
+
     label_list = ['control', 'app_control', 'video', 'weather', 'channel_switch',
                 'image_interactive', 'math_operation', 'disport', 'time_query', 'baike',
                 'info_news', 'info_stock&fund', 'translate', 'converter', 'karaoke',
@@ -118,7 +119,4 @@ if __name__ == '__main__':
     print label_id
     label = label_list[label_id]
     prob = result[label_id]
-    print "label:"+ label +'\t'+"prob:%.2f"%prob
-
-    # for idx in result['output']:
-    #     print(bert.idx_vocab[idx])
+    print "label:" + label + '\t' + "prob:%.2f" % prob
