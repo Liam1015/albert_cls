@@ -2,8 +2,8 @@
 #export BERT_BASE_DIR=/home/zhaoxj/pycharmProjects/albert_zh/albert_base_zh
 #export GLUE_DIR=/home/home/zhaoxj/pycharmProjects/albert_zh/data
 #export OUTPUT_DIR=/home/zhaoxj/pycharmProjects/albert_zh/output
-export BERT_BASE_DIR=/home/zxj/workspace/albert_zh/albert_base_zh
 
+export BERT_BASE_DIR=/home/zxj/workspace/albert_zh/albert_base_zh
 export GLUE_DIR=/home/zxj/workspace/albert_zh/data
 export OUTPUT_DIR=/home/zxj/workspace/albert_zh/output
 

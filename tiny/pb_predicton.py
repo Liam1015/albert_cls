@@ -80,10 +80,6 @@ class bertPredict(object):
         assert len(input_ids) == max_seq_length
         assert len(input_mask) == max_seq_length
         assert len(segment_ids) == max_seq_length
-        # label_list =
-        # label_map = {}
-        # for (i, label) in enumerate(label_list):
-        #     label_map[label] = i
         label_ids = 0
 
         return [input_ids], [input_mask], [segment_ids], [label_ids]
@@ -112,8 +108,9 @@ if __name__ == '__main__':
     bert = bertPredict('./model_pb', 'albert_tiny/vocab.txt')
 
     result = bert.predict('下降', max_seq_length=128)
-
-
+    print type(result)
+    for key, value in result.items():
+        print key
     result = result['output'][0]
     label_id = np.argmax(result)
     print label_id
